@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Ô nhập số nguyên -->
+    <EditText
+        android:id="@+id/edtLimit"
+        android:inputType="number"
+        android:hint="Nhập số nguyên (ví dụ 100)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Chọn đúng 1 loại số: dùng RadioGroup -->
+    <RadioGroup
+        android:id="@+id/rgTypes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp">
+
+        <RadioButton
+            android:id="@+id/rbOdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lẻ" />
+
+        <RadioButton
+            android:id="@+id/rbEven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số chẵn" />
+
+        <RadioButton
+            android:id="@+id/rbPrime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số nguyên tố" />
+
+        <RadioButton
+            android:id="@+id/rbSquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số chính phương" />
+
+        <RadioButton
+            android:id="@+id/rbPerfect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số hoàn hảo" />
+
+        <RadioButton
+            android:id="@+id/rbFibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số Fibonacci" />
+    </RadioGroup>
+
+    <!-- Thông báo rỗng -->
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:text="Không có số nào thỏa mãn"
+        android:textStyle="italic"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Danh sách số -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="amount">Amount</string>
+    <string name="from_currency">From Currency</string>
+    <string name="to_currency">To Currency</string>
+    <string name="enter_amount">Enter amount</string>
+
+    <!-- Currency names -->
+    <string-array name="currencies">
+        <item>USD - US Dollar</item>
+        <item>EUR - Euro</item>
+        <item>GBP - British Pound</item>
+        <item>JPY - Japanese Yen</item>
+        <item>CNY - Chinese Yuan</item>
+        <item>VND - Vietnamese Dong</item>
+        <item>KRW - South Korean Won</item>
+        <item>AUD - Australian Dollar</item>
+        <item>CAD - Canadian Dollar</item>
+        <item>CHF - Swiss Franc</item>
+        <item>INR - Indian Rupee</item>
+        <item>SGD - Singapore Dollar</item>
+    </string-array>
+</resources>
